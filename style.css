@@ -1,0 +1,215 @@
+   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: rgb(232, 238, 238);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .input-container {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .input-container input {
+      border: none;
+      outline: none;
+      padding: 12px 24px;
+      margin-block: 12px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .input-container input[type="text"] {
+      width: 70%;
+    }
+
+    #addBtn {
+      border: none;
+      outline: none;
+      padding: 12px 24px;
+      margin-block: 12px;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #3da33d;
+      color: #fff;
+      font-weight: 700;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    #addBtn:hover {
+      background-color: #60b160;
+    }
+
+    ul {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+      cursor: pointer;
+      margin-block-end: 12px;
+      border-radius: 8px;
+      border: 0.125px solid #a19f9f;
+      padding: 6px 12px;
+      background-color: #ffffff;
+    }
+
+    ul li p {
+      flex-grow: 1;
+      padding: 2px;
+    }
+
+    .btn {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background-color: transparent;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .deleteBtn {
+      color: #ff0000;
+    }
+
+    .editBtn {
+      color: #008000;
+    }
+
+
+    /* Media Queries*/
+
+ /* Mobile Phones (≤480px) */
+@media (max-width: 480px) {
+
+ .container {
+        max-width: 1200px;
+        margin: 8px 15px;
+    }
+
+     .input-container {
+        padding: 10px;
+    }
+
+    .input-container h1 {
+        font-size: 20px;
+    }
+
+    .input-container input[type="text"] {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    #addBtn {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      
+    }
+
+    ul li p {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 6px;
+        font-size: 14px;
+ 
+    }
+
+  
+}
+
+/* Tablets (481px–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .input-container input[type="text"] {
+        width: 65%;
+        font-size: 15px;
+    }
+
+    #addBtn {
+        width: 30%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+
+    ul {
+        padding: 0 10px;
+    }
+
+    ul li {
+        padding: 8px 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
+/* Small Laptops (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .input-container input[type="text"] {
+        width: 70%;
+    }
+
+    #addBtn {
+        width: auto;
+    }
+
+    ul li {
+        padding: 10px 14px;
+    }
+}
+
+/* Large Screens (≥1025px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .input-container input[type="text"] {
+        width: 70%;
+    }
+
+    #addBtn {
+        width: auto;
+    }
+
+    ul {
+        max-width: 500px;
+    }
+}
